@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(50, 50, 50);
+}
+
+aside {
+    float: left;
+    width: 20%;
+    height: 100vh;
+    background-color: black;
+    border-right: 5px solid skyblue;
+    color: white;
+    position: fixed;
+}
+
+.logo {
+    font-size: 5em;
+    margin-left: 50px;
+    position: relative;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+aside ul {
+    width: 100%;
+    margin-top: 5px;
+    margin-left: -30px;
+    list-style: none;
+}
+
+.faa {
+    text-decoration: none;
+    display: block;
+    width: calc(100% + 30px);
+    height: 80px;
+    padding: 15px 25%;
+    font-size: 30px;
+    color: silver;
+    cursor: pointer;
+}
+
+.faa:hover {
+    background-color: rgb(50, 50, 50);
+    color: white;
+    width: calc(100% + 35px);
+    transition: all 0.3s;
+}
+
+main {
+    float: right;
+    width: 80%;
+    color: white;
+    padding: 50px;
+}
+
+.alert-warning {
+    float: left;
+    clear: both;
+    width: 400px;
+    margin: 20px 34%;
+    text-align: left;
+}
+
+.page_name {
+    font-size: 4em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+.btn {
+    margin: 20px 55px;
+}
+
+.form-control {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10px;
+}
+
+:root {
+    --btnWidth: 180px;
+}
+
+.btn-send-news {
+    width: var(--btnWidth);
+    margin-left: calc((100% - var(--btnWidth)) / 2);
+}

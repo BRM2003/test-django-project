@@ -1,0 +1,12 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}  {% endblock %}
+
+{% block content %}
+    <h1>{{title}}</h1>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, alias amet commodi dicta earum eos eum explicabo facere id magnam maiores minima nemo, nobis odio omnis optio perferendis placeat qui, quod quos recusandae reprehenderit repudiandae suscipit tempora tenetur ut veniam voluptas? Accusantium ad aliquam, aliquid aperiam architecto at atque commodi consequuntur doloremque dolorum eligendi enim facere facilis fugiat in ipsam ipsum labore laudantium maxime minus molestiae nihil nostrum nulla numquam obcaecati odio placeat, porro quasi quibusdam reiciendis sequi totam unde, veritatis vero vitae voluptatem voluptatum. Ab consectetur cum dicta dolor dolores fugiat nam obcaecati optio, pariatur, quisquam quos sit, ut vero voluptas voluptate? Autem dolorem earum facere, pariatur quod repellendus reprehenderit voluptas? Debitis eos facere ipsam perspiciatis totam voluptas! Ab commodi debitis delectus dolorum enim excepturi molestias, officiis pariatur placeat, porro, quidem saepe! Expedita, fuga, quisquam? A consectetur corporis eius eos eveniet labore, maxime nisi non officiis quasi ratione rerum.</p>
+    {% for val in values %}
+    <p>{{val}}</p>
+    {% endfor %}
+{%endblock%}

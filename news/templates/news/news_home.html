@@ -1,0 +1,20 @@
+{% extends 'main/layout.html' %}
+
+{% block title %} Новости {% endblock %}
+
+{% block content %}
+    <h1 class="page_name"> Новости </h1>
+<hr>
+<!--    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci alias asperiores at atque blanditiis cum debitis deserunt doloremque, eum ex exercitationem expedita in incidunt, iste minima molestiae non nostrum, placeat quisquam repudiandae sed sequi suscipit tempora unde! Beatae consequuntur dolorum est fugit non possimus quibusdam quod ratione. Ab aliquam asperiores debitis distinctio dolor dolorem ducimus enim fugiat, fugit hic ipsum maxime minima molestias obcaecati quam quos rem repellat, sed sit unde. Accusamus animi aperiam at blanditiis delectus doloribus ea expedita, explicabo fugiat id illum ipsum neque odio odit optio quam quasi ratione reprehenderit, saepe soluta temporibus totam velit. Ab accusantium asperiores commodi consectetur culpa delectus dicta eaque exercitationem fuga fugit impedit in ipsa laboriosam magnam magni minus nisi nobis nulla officia praesentium quaerat quas quia quos recusandae, sed sint sunt, totam vel veniam voluptas! Assumenda consequuntur culpa cupiditate dolore doloribus excepturi, expedita facilis ipsa ipsum labore minima molestiae mollitia neque nesciunt non optio porro praesentium quia quidem recusandae reiciendis saepe sit totam voluptas voluptatum. Alias commodi cum dolor iure nulla saepe similique veritatis. Accusantium ad, alias at atque blanditiis consectetur distinctio ea ex exercitationem facere id, incidunt quisquam, totam. Aspernatur autem blanditiis culpa delectus ea eaque enim error eum excepturi facere harum impedit incidunt ipsa itaque iusto minus modi mollitia natus nisi, nobis numquam perferendis perspiciatis quam quas quisquam ratione rem repellat velit voluptatem voluptatibus. Accusantium adipisci consectetur deserunt, dignissimos, enim illum incidunt inventore ipsum maxime nemo numquam quae quasi quidem saepe sint tempora tempore voluptatem voluptatum. Adipisci alias assumenda, consectetur corporis culpa cum cumque dolore dolorem doloremque enim eos error id, ipsam iure labore magnam molestiae mollitia nam nostrum officia pariatur praesentium quas quod sint, soluta. Alias cupiditate earum, error est ex expedita modi nemo neque non nostrum provident, quam quibusdam quidem quo repellat repellendus sequi veniam, voluptate.</p>-->
+    {% if news %}
+        {% for val in news%}
+            <div class="alert alert-warning">
+                <h3>{{val.title}}</h3>
+                <p>{{val.anons}}</p>
+                <a href="{% url 'news_detail' val.id %}" class="btn btn-warning">Подробнее</a>
+            </div>
+        {% endfor %}
+    {% else %}
+        <h2>Новостей пока нет</h2>
+    {% endif %}
+{%endblock%}
