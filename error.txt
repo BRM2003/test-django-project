@@ -1,0 +1,28 @@
+Mon Dec 26 09:18:19 2022 OpenVPN 2.4.9 x86_64-w64-mingw32 [SSL (OpenSSL)] [LZO] [LZ4] [PKCS11] [AEAD] built on Apr 16 2020
+Mon Dec 26 09:18:19 2022 Windows version 6.2 (Windows 8 or greater) 64bit
+Mon Dec 26 09:18:19 2022 library versions: OpenSSL 1.1.1f  31 Mar 2020, LZO 2.10
+Mon Dec 26 09:18:19 2022 MANAGEMENT: TCP Socket listening on [AF_INET]127.0.0.1:25340
+Mon Dec 26 09:18:19 2022 Need hold release from management interface, waiting...
+Mon Dec 26 09:18:20 2022 MANAGEMENT: Client connected from [AF_INET]127.0.0.1:25340
+Mon Dec 26 09:18:20 2022 MANAGEMENT: CMD 'state on'
+Mon Dec 26 09:18:20 2022 MANAGEMENT: CMD 'log all on'
+Mon Dec 26 09:18:20 2022 MANAGEMENT: CMD 'echo all on'
+Mon Dec 26 09:18:20 2022 MANAGEMENT: CMD 'bytecount 5'
+Mon Dec 26 09:18:20 2022 MANAGEMENT: CMD 'hold off'
+Mon Dec 26 09:18:20 2022 MANAGEMENT: CMD 'hold release'
+Mon Dec 26 09:18:20 2022 Outgoing Control Channel Authentication: Using 160 bit message hash 'SHA1' for HMAC authentication
+Mon Dec 26 09:18:20 2022 Incoming Control Channel Authentication: Using 160 bit message hash 'SHA1' for HMAC authentication
+Mon Dec 26 09:18:20 2022 MANAGEMENT: >STATE:1672028300,RESOLVE,,,,,,
+Mon Dec 26 09:18:20 2022 TCP/UDP: Preserving recently used remote address: [AF_INET]172.27.31.57:48752
+Mon Dec 26 09:18:20 2022 Socket Buffers: R=[65536->65536] S=[65536->65536]
+Mon Dec 26 09:18:20 2022 Attempting to establish TCP connection with [AF_INET]172.27.31.57:48752 [nonblock]
+Mon Dec 26 09:18:20 2022 MANAGEMENT: >STATE:1672028300,TCP_CONNECT,,,,,,
+Mon Dec 26 09:20:22 2022 TCP: connect to [AF_INET]172.27.31.57:48752 failed: Unknown error
+Mon Dec 26 09:20:22 2022 SIGUSR1[connection failed(soft),init_instance] received, process restarting
+Mon Dec 26 09:20:22 2022 MANAGEMENT: >STATE:1672028422,RECONNECTING,init_instance,,,,,
+Mon Dec 26 09:20:22 2022 Restart pause, 5 second(s)
+Mon Dec 26 09:20:27 2022 MANAGEMENT: >STATE:1672028427,RESOLVE,,,,,,
+Mon Dec 26 09:20:27 2022 TCP/UDP: Preserving recently used remote address: [AF_INET]172.27.31.57:48752
+Mon Dec 26 09:20:27 2022 Socket Buffers: R=[65536->65536] S=[65536->65536]
+Mon Dec 26 09:20:27 2022 Attempting to establish TCP connection with [AF_INET]172.27.31.57:48752 [nonblock]
+Mon Dec 26 09:20:27 2022 MANAGEMENT: >STATE:1672028427,TCP_CONNECT,,,,,,
